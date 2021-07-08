@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="generator" content="11ty v{{ pkg.devDependencies['@11ty/eleventy'] | replace('^','') }}"/>
+  <meta name="description" content="{{ description or page.description or pkg.description }}"/>
+  <meta name="hostname" content="{{ pkg.hostname }}"/>
+
+  {%- block metaogp -%}
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="{{ pkg.title }}"/>
+  <meta property="og:title" content="{{ title or page.title or pkg.title }}"/>
+  <meta property="og:description" content="{{ description or pkg.description }}"/>
+  <meta property="og:url" content="{{ url or pkg.homepage }}"/>
+  <meta property="og:image" content=""/>
+  {%- endblock %}
+
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:locale:alternate" content="pt_BR"/>
+  <meta property="og:locale:alternate" content="pt_PT"/>
+
+{% for style in pkg.styles %}
+  <link rel="stylesheet" type="text/css" href="{{ style | url }}"/>
+{% endfor %}
+  <title>{{ pkg.title }}{% if title %} - {{ title }}{% endif %}</title>
+</head>
+<body>
+  <header>
+  {%- block header -%}
+  {% endblock %}
+  </header>
+
+  <aside>
+  {% block sidebar %}
+  {% endblock %}
+  </aside>
+
+  <main>
+  {%- block content -%}
+    {{ content | safe }}
+  {%- endblock -%}
+  </main>
+
+  <footer>
+  {% block footer %}
+  {% endblock %}
+  </footer>
+</body>
+</html>
