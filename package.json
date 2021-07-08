@@ -26,6 +26,12 @@
   },
   "homepage": "https://github.com/drawght/drawght.github.io#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
-  }
+    "@11ty/eleventy": "^0.12.1",
+    "markdown-it-deflist": "^2.1.0",
+    "markdown-it-highlightjs": "^3.5.0"
+  },
+  "styles": [
+    "/assets/styles/default.css",
+    "https://unpkg.com/@highlightjs/cdn-assets@11.1.0/styles/base16/solarized-dark.min.css"
+  ]
 }
