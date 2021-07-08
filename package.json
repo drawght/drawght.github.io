@@ -5,6 +5,8 @@
   "description": "A data handler for texts without logical statements.",
   "main": ".eleventy.js",
   "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --watch --serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "private": true,
