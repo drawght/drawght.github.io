@@ -1,8 +1,9 @@
 {
   "name": "drawght.github.io",
   "version": "0.1.0",
-  "description": "Drawght is a data handler for texts without logical statements.",
-  "main": ".eleventyrc.js",
+  "title": "Drawght",
+  "description": "A data handler for texts without logical statements.",
+  "main": ".eleventy.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
