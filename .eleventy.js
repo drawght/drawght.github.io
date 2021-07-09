@@ -35,10 +35,10 @@ module.exports = function(settings) {
 
   settings.addLayoutAlias("default", "layouts/default.njk")
 
-  settings.addPassthroughCopy([
-    "./assets/styles",
-    "./assets/scripts",
-  ]);
+  settings.addPassthroughCopy({
+    "./assets/styles" : "assets/styles",
+    "./assets/scripts": "assets/scripts",
+  });
 
   return {
     templateFormats: [
