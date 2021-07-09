@@ -2,6 +2,7 @@
 const TZ = process.env.TZ || "America/Manaus";
 
 // Libraries
+const base = require("./libraries");
 const slugify = require("slugify");
 
 // Filters
@@ -46,9 +47,14 @@ const frontMatterPatch = function(object) {
     });
 }
 
+const markdown = function(text) {
+  return base.markdownParser.render(text);
+}
+
 module.exports = {
   readingTime,
   slug,
   toFormat,
   frontMatterPatch,
+  markdown,
 }
