@@ -23,19 +23,17 @@
 
 {%- for style in pkg.links.styles %}
   <link rel="stylesheet" type="text/css" href="{{ style | url }}"/>
-{% endfor %}
+{%- endfor %}
+
   <title>{{ pkg.title }}{% if title %} - {{ title }}{% endif %}</title>
 </head>
 <body>
-  <header>
-  {%- block header -%}
-  {% endblock %}
-  </header>
-
   <aside>
-  {% block sidebar %}
-  {% endblock %}
+    {% markdown %}{% include "partials/summary.md" %}{% endmarkdown %}
   </aside>
+
+  <header>
+  </header>
 
   <main>
   {%- block content -%}
@@ -44,8 +42,7 @@
   </main>
 
   <footer>
-  {% block footer %}
-  {% endblock %}
+    <small>{{ pkg.title }}</small>
   </footer>
 </body>
 </html>
