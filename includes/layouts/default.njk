@@ -25,24 +25,35 @@
   <link rel="stylesheet" type="text/css" href="{{ style | url }}"/>
 {%- endfor %}
 
+  <link rel="shortcut icon" type="image/ico" href="{{ '/assets/images/favicon.ico' | url }}" />
+  <link rel="icon" type="image/ico" href="{{ '/assets/images/favicon.ico' }}" />
+
   <title>{{ pkg.title }}{% if title %} - {{ title }}{% endif %}</title>
 </head>
 <body>
   <aside>
-    {% markdown %}{% include "partials/summary.md" %}{% endmarkdown %}
-  </aside>
+    <main>
+      <figure>
+        <img src="/assets/images/brand.svg"/>
+        <figcaption>{{ pkg.title }}</figcaption>
+      </figure>
 
-  <header>
-  </header>
+      {%- markdown %}
+      {%- include "partials/summary.md" %}
+      {%- endmarkdown %}
+    </main>
+
+    <footer>
+      {%- markdown %}
+      {%- include "partials/about.md" %}
+      {%- endmarkdown %}
+    </footer>
+  </aside>
 
   <main>
   {%- block content -%}
     {{ content | safe }}
   {%- endblock -%}
   </main>
-
-  <footer>
-    <small>{{ pkg.title }}</small>
-  </footer>
 </body>
 </html>

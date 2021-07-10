@@ -1,5 +1,3 @@
-# {{ pkg.title }}
-
 {{ pkg.description }}
 
 Parsers:
