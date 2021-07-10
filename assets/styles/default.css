@@ -10,9 +10,9 @@ body {
   align-content: center;
   justify-items: stretch;
   align-items: stretch;
-  width: var(--page-width);
+  width: calc(var(--page-width) + var(--grid-gap));
   margin: 0 auto;
-  padding: 0 var(--grid-gap);
+  padding: 0 calc(var(--grid-gap) / 2);
 }
 
 body > header {
@@ -26,7 +26,6 @@ body > main {
 
 body > aside {
   --padding-h: 2.00rem;
-  --padding-v: 0.50rem;
 
   grid-area: sidebar;
   display: flex;
