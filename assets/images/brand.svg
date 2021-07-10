@@ -25,7 +25,7 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="11.765625"
+     inkscape:zoom="11.921875"
      inkscape:cx="32"
      inkscape:cy="32"
      inkscape:document-units="mm"
@@ -58,7 +58,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -68,36 +68,83 @@
      id="layer1"
      transform="translate(0,-280.06665)">
     <g
-       id="g1001"
-       transform="translate(0.02111002,-0.27518333)">
+       id="g1520"
+       transform="translate(4.8269987,-1.2982962)">
+      <text
+         id="text835"
+         y="290.04526"
+         x="-7.1657324"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888855px;line-height:1.25;font-family:'Poor Richard';-inkscape-font-specification:'Poor Richard';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Poor Richard';-inkscape-font-specification:'Poor Richard';stroke-width:0.26458332"
+           y="294.49921"
+           x="-7.1657324"
+           id="tspan833"
+           sodipodi:role="line" /></text>
+      <text
+         id="text839"
+         y="289.41559"
+         x="-7.4805617"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888855px;line-height:1.25;font-family:'Poor Richard';-inkscape-font-specification:'Poor Richard';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Poor Richard';-inkscape-font-specification:'Poor Richard';stroke-width:0.26458332"
+           y="293.86954"
+           x="-7.4805617"
+           id="tspan837"
+           sodipodi:role="line" /></text>
       <g
-         id="g993">
-        <path
-           d="m 15.589311,289.33767 h -0.608248 q -0.258504,0 -0.456178,0.13229 -0.182469,0.11579 -0.319324,0.33073 -0.12165,0.19844 -0.197685,0.46302 -0.06078,0.24804 -0.06078,0.51263 v 2.66237 q 0,0.61184 -0.121649,1.07486 -0.106467,0.46302 -0.395359,0.77723 -0.273709,0.33072 -0.745092,0.49609 -0.456178,0.16536 -1.155666,0.16536 h -1.23169 v -1.07487 h 1.29252 q 0.638658,0 0.897152,-0.31419 0.273708,-0.31419 0.273708,-1.14102 v -2.28203 q 0,-1.10794 0.30413,-1.62057 0.304119,-0.52917 0.699477,-0.71107 -0.395358,-0.19843 -0.699477,-0.74414 -0.30413,-0.54571 -0.30413,-1.5875 v -2.28203 q 0,-0.82682 -0.273708,-1.14102 -0.273709,-0.31419 -0.912356,-0.31419 h -1.277312 v -1.07487 h 1.23169 q 0.699488,0 1.155666,0.16536 0.471383,0.16537 0.745092,0.4961 0.288925,0.3142 0.395359,0.77722 0.121649,0.46302 0.121649,1.07486 v 2.66237 q 0,0.24805 0.06078,0.51263 0.06078,0.24805 0.18248,0.46302 0.136855,0.19844 0.319324,0.33074 0.197674,0.13229 0.456178,0.13229 h 0.623453 z"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.11111069px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.29732451"
-           id="path852"
-           inkscape:connector-curvature="0" />
-        <path
-           inkscape:connector-curvature="0"
-           id="path973"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.11111069px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.29732451"
-           d="m 1.3018023,289.33767 h 0.608248 q 0.258504,0 0.456178,0.13229 0.182469,0.11579 0.319324,0.33073 0.12165,0.19844 0.197685,0.46302 0.06078,0.24804 0.06078,0.51263 v 2.66237 q 0,0.61184 0.121649,1.07486 0.106467,0.46302 0.395359,0.77723 0.273709,0.33072 0.745092,0.49609 0.456178,0.16536 1.155666,0.16536 h 1.23169 v -1.07487 h -1.29252 q -0.638658,0 -0.897152,-0.31419 -0.273708,-0.31419 -0.273708,-1.14102 v -2.28203 q 0,-1.10794 -0.30413,-1.62057 -0.304119,-0.52917 -0.699477,-0.71107 0.395358,-0.19843 0.699477,-0.74414 0.30413,-0.54571 0.30413,-1.5875 v -2.28203 q 0,-0.82682 0.273708,-1.14102 0.273709,-0.31419 0.912356,-0.31419 h 1.277312 v -1.07487 h -1.23169 q -0.699488,0 -1.155666,0.16536 -0.471383,0.16537 -0.745092,0.4961 -0.288925,0.3142 -0.395359,0.77722 -0.121649,0.46302 -0.121649,1.07486 v 2.66237 q 0,0.24805 -0.06078,0.51263 -0.06078,0.24805 -0.18248,0.46302 -0.136855,0.19844 -0.319324,0.33074 -0.197674,0.13229 -0.456178,0.13229 h -0.623453 z" />
+         style="fill:#000000;fill-opacity:1"
+         transform="translate(-4.8269985,1.2982727)"
+         id="g873">
+        <g
+           aria-label="."
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888855px;line-height:1.25;font-family:'Poor Richard';-inkscape-font-specification:'Poor Richard';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           id="text843"
+           transform="matrix(4.1995938,0,0,4.3026053,15.762574,-948.1087)">
+          <path
+             d="m -1.7384952,287.78601 q 0.1036974,0 0.1784559,0.0699 0.074759,0.0699 0.074759,0.18087 0,0.11334 -0.072347,0.17846 -0.072347,0.0627 -0.1712212,0.0627 -0.086816,0 -0.1736328,-0.0723 -0.086816,-0.0748 -0.086816,-0.16881 0,-0.10128 0.074759,-0.17604 0.074759,-0.0748 0.1760444,-0.0748 z"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Poor Richard';-inkscape-font-specification:'Poor Richard';fill:#000000;fill-opacity:1;stroke-width:0.26458332"
+             id="path848"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           transform="matrix(4.1995938,0,0,4.3026053,15.762574,-953.40037)"
+           id="g863"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888855px;line-height:1.25;font-family:'Poor Richard';-inkscape-font-specification:'Poor Richard';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           aria-label=".">
+          <path
+             inkscape:connector-curvature="0"
+             id="path861"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Poor Richard';-inkscape-font-specification:'Poor Richard';fill:#000000;fill-opacity:1;stroke-width:0.26458332"
+             d="m -1.7384952,287.78601 q 0.1036974,0 0.1784559,0.0699 0.074759,0.0699 0.074759,0.18087 0,0.11334 -0.072347,0.17846 -0.072347,0.0627 -0.1712212,0.0627 -0.086816,0 -0.1736328,-0.0723 -0.086816,-0.0748 -0.086816,-0.16881 0,-0.10128 0.074759,-0.17604 0.074759,-0.0748 0.1760444,-0.0748 z" />
+        </g>
       </g>
       <g
-         transform="translate(0.79375,1.04776)"
-         id="g989">
-        <path
-           sodipodi:nodetypes="scscscscs"
-           inkscape:connector-curvature="0"
-           id="path932"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.11111069px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26463601"
-           d="m 8.71014,290.4135 c 0,0.27668 -0.095994,0.5211 -0.2879827,0.73322 -0.1919874,0.21213 -0.4463711,0.31819 -0.7631506,0.31819 -0.3263795,0 -0.5855631,-0.10606 -0.7775508,-0.31819 -0.1919884,-0.21212 -0.2879826,-0.45654 -0.2879826,-0.73322 0,-0.28591 0.095994,-0.53493 0.2879826,-0.74706 0.1919877,-0.21213 0.4511713,-0.3182 0.7775508,-0.3182 0.3167795,0 0.5711632,0.10607 0.7631506,0.3182 0.1919887,0.21213 0.2879827,0.46115 0.2879827,0.74706 z" />
-        <path
-           d="m 8.71014,285.12183 c 0,0.27668 -0.095994,0.5211 -0.2879827,0.73322 -0.1919874,0.21213 -0.4463711,0.31819 -0.7631506,0.31819 -0.3263795,0 -0.5855631,-0.10606 -0.7775508,-0.31819 -0.1919884,-0.21212 -0.2879826,-0.45654 -0.2879826,-0.73322 0,-0.28591 0.095994,-0.53493 0.2879826,-0.74706 0.1919877,-0.21213 0.4511713,-0.3182 0.7775508,-0.3182 0.3167795,0 0.5711632,0.10607 0.7631506,0.3182 0.1919887,0.21213 0.2879827,0.46115 0.2879827,0.74706 z"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.11111069px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26463601"
-           id="path985"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="scscscscs" />
+         style="fill:#000800;fill-opacity:1"
+         id="g879"
+         transform="translate(-4.8269985,1.2982992)">
+        <g
+           aria-label="}"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888855px;line-height:1.25;font-family:'Poor Richard';-inkscape-font-specification:'Poor Richard';letter-spacing:0px;word-spacing:0px;fill:#000800;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           id="text831"
+           transform="matrix(2.7485835,0,0,3.0649874,14.265189,-587.74781)">
+          <path
+             d="m 0.4894287,285.96429 q -0.1591634,0.0579 -0.25803764,0.18569 -0.0964627,0.12781 -0.0964627,0.30386 v 0.65112 q 0,0.25562 -0.0434082,0.40514 -0.04099664,0.14711 -0.12781304,0.26769 -0.08440483,0.12299 -0.21221786,0.22668 -0.12540147,0.1037 -0.2387451,0.16399 -0.11093207,0.0627 -0.144694,0.0627 -0.0337619,0 -0.0337619,-0.094 0,-0.0121 0.0361735,-0.0458 0.16398654,-0.16399 0.2242757,-0.40032 0.0602892,-0.23633 0.0602892,-0.51125 v -0.74035 q 0,-0.18811 0.1229899,-0.33039 0.12540147,-0.14469 0.3255615,-0.21945 -0.2025716,-0.0723 -0.3255615,-0.20981 -0.1229899,-0.13987 -0.1229899,-0.31832 v -0.74036 q 0,-0.27733 -0.0602892,-0.51125 -0.0602892,-0.23633 -0.2242757,-0.40032 l -0.0361735,-0.0458 q 0,-0.0941 0.0337619,-0.0941 0.0409966,0 0.1953369,0.0916 0.15675183,0.0892 0.31591523,0.25563 0.16157497,0.1664 0.22909883,0.43167 0.0265272,0.10369 0.0265272,0.34726 v 0.65113 q 0,0.16639 0.0964627,0.28938 0.0988742,0.12299 0.25803764,0.18087 z"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Poor Richard';-inkscape-font-specification:'Poor Richard';fill:#000800;fill-opacity:1;stroke-width:0.26458332"
+             id="path845"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           transform="matrix(-2.7485835,0,0,3.0649874,2.6681439,-587.74781)"
+           id="g867"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888855px;line-height:1.25;font-family:'Poor Richard';-inkscape-font-specification:'Poor Richard';letter-spacing:0px;word-spacing:0px;fill:#000800;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           aria-label="}">
+          <path
+             inkscape:connector-curvature="0"
+             id="path865"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Poor Richard';-inkscape-font-specification:'Poor Richard';fill:#000800;fill-opacity:1;stroke-width:0.26458332"
+             d="m 0.4894287,285.96429 q -0.1591634,0.0579 -0.25803764,0.18569 -0.0964627,0.12781 -0.0964627,0.30386 v 0.65112 q 0,0.25562 -0.0434082,0.40514 -0.04099664,0.14711 -0.12781304,0.26769 -0.08440483,0.12299 -0.21221786,0.22668 -0.12540147,0.1037 -0.2387451,0.16399 -0.11093207,0.0627 -0.144694,0.0627 -0.0337619,0 -0.0337619,-0.094 0,-0.0121 0.0361735,-0.0458 0.16398654,-0.16399 0.2242757,-0.40032 0.0602892,-0.23633 0.0602892,-0.51125 v -0.74035 q 0,-0.18811 0.1229899,-0.33039 0.12540147,-0.14469 0.3255615,-0.21945 -0.2025716,-0.0723 -0.3255615,-0.20981 -0.1229899,-0.13987 -0.1229899,-0.31832 v -0.74036 q 0,-0.27733 -0.0602892,-0.51125 -0.0602892,-0.23633 -0.2242757,-0.40032 l -0.0361735,-0.0458 q 0,-0.0941 0.0337619,-0.0941 0.0409966,0 0.1953369,0.0916 0.15675183,0.0892 0.31591523,0.25563 0.16157497,0.1664 0.22909883,0.43167 0.0265272,0.10369 0.0265272,0.34726 v 0.65113 q 0,0.16639 0.0964627,0.28938 0.0988742,0.12299 0.25803764,0.18087 z" />
+        </g>
       </g>
     </g>
   </g>
