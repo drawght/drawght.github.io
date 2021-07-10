@@ -1,0 +1,92 @@
+drawght-parser(3) -- Libraries to parse Drawght statements
+==========================================================
+
+## SYNOPSIS
+
+Drawght has been implemented in [JavaScript][], [Ruby][], [Go][].
+
+### JavaScript
+
+```js
+"use strict";
+
+const fs = require("fs");
+const drawght = require("./drawght");
+const data = require("./data.json");
+const inputFile = "template.in";
+
+console.log("Dataset", data);
+fs.readFile(inputFile, "utf8", function(fail, template) {
+  if (fail) {
+    return console.error(fail);
+  }
+  console.log(template);
+  console.log(drawght.parse(template, data));
+});
+```
+
+### Ruby
+
+```
+require "yaml"
+require "drawght"
+
+yaml = File.read("data.yaml")
+data = YAML.load(yaml)
+input_file = "template.in"
+
+puts "Dataset", yaml
+template = File.read(input_file)
+drawght = Drawght::Parser.new(template)
+puts template
+puts drawght.parse(data)
+```
+
+### Go
+
+```
+package main
+
+import (
+	"fmt"
+	"io/ioutil"
+	"encoding/json"
+)
+
+import "github.com/drawght/drawght-parser-go"
+
+func main() {
+	jsonContent, fail := ioutil.ReadFile("data.json")
+	if fail != nil {
+		fmt.Println(fail)
+	}
+
+	var data interface{}
+	if fail := json.Unmarshal(jsonContent, &data); fail != nil {
+		fmt.Println(fail)
+	}
+
+	template, fail := ioutil.ReadFile("template.in")
+	if fail != nil {
+		fmt.Println(fail)
+	}
+
+	result := drawght.Parse(string(template), data)
+
+	fmt.Printf("%v\n", data)
+	fmt.Printf("%v\n", result)
+}
+```
+
+## SEE ALSO
+
+drawght(5)
+
+## AUTHOR
+
+Hallison Batista <<email@hallison.dev.br>>
+
+## ACKNOWLEDGEMENTS
+
+Drawght is developed and maintained by Hallison Batista
+(<https://drawght.github.io>).

@@ -1,0 +1,48 @@
+drawght(5) -- A data handler for texts without logical statements
+=================================================================
+
+## DESCRIPTION
+
+Drawght is a data handler for texts without logical statements. The goal is
+to use a dataset (such as the subject of a text) to draft a document
+template. It can be considered a mini template processor.
+
+Data is accessed through `{}` braces, replaced by their respective values.
+
+## SYNTAX
+
+`{key}`
+
+: Converts `key` to its respective value. If the value is a list, then the row
+  will be replicated and converted with the respective values.
+
+`{object.key}`
+
+: Converts `key` to its respective value inside `object`, assuming the same
+  behavior as `{key}`.
+
+`{list:key}`
+
+: Selects `list`, replicates the line for each item in the list, and converts
+  `key` to its respective value contained in an object within `list`. The
+  `list` key can also be accessed by `object.list`, just as `key` can also be
+  accessed by `object.key` which will be converted following the same process
+  in case it is a list.
+
+`{list#n.key}`
+
+: Selects item object `n` (from 1) from `list` and converts `key` to its
+  respective value. The whole process is similar to `object.key`.
+
+## SEE ALSO
+
+drawght-parser(3)
+
+## AUTHOR
+
+Hallison Batista <<email@hallison.dev.br>>
+
+## ACKNOWLEDGEMENTS
+
+Drawght is developed and maintained by Hallison Batista
+(<https://drawght.github.io>).
