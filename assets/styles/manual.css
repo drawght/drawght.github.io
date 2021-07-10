@@ -1,0 +1,33 @@
+main .mp {max-width:100ex;padding:0 9ex 1ex 4ex}
+main .mp p,.mp pre,.mp ul,.mp ol,.mp dl {margin:0 0 20px 0}
+main .mp h2 {margin:10px 0 0 0}
+main .mp > p,.mp > pre,.mp > ul,.mp > ol,.mp > dl {margin-left:8ex}
+main .mp h3 {margin:0 0 0 4ex}
+main .mp dt {margin:0;clear:left}
+main .mp dt.flush {float:left;width:8ex}
+main .mp dd {margin:0 0 0 9ex}
+main .mp h1,.mp h2,.mp h3,.mp h4 {clear:left}
+main .mp pre {margin-bottom:20px}
+main .mp pre+h2,.mp pre+h3 {margin-top:22px}
+main .mp h2+pre,.mp h3+pre {margin-top:5px}
+main .mp img {display:block;margin:auto}
+main .mp h1.man-title {display:none}
+main .mp,.mp code,.mp pre,.mp tt,.mp kbd,.mp samp,.mp h3,.mp h4 {font-family:monospace;font-size:14px;line-height:1.42857142857143}
+main .mp h2 {font-size:16px;line-height:1.25}
+main .mp h1 {font-size:20px;line-height:2}
+main .mp {text-align:justify;background:#fff}
+main .mp,.mp code,.mp pre,.mp pre code,.mp tt,.mp kbd,.mp samp {color:#131211}
+main .mp h1,.mp h2,.mp h3,.mp h4 {color:#030201}
+main .mp u {text-decoration:underline}
+main .mp code,.mp strong,.mp b {font-weight:bold;color:#131211}
+main .mp em,.mp var {font-style:italic;color:#232221;text-decoration:none}
+main .mp a,.mp a:link,.mp a:hover,.mp a code,.mp a pre,.mp a tt,.mp a kbd,.mp a samp {color:#0000ff}
+main .mp b.man-ref {font-weight:normal;color:#434241}
+main .mp pre {padding:0 4ex}
+main .mp pre code {font-weight:normal;color:#434241}
+main .mp h2+pre,h3+pre {padding-left:0}
+main ol.man-decor,ol.man-decor li {margin:3px 0 10px 0;padding:0;float:left;width:33%;list-style-type:none;text-transform:uppercase;color:#999;letter-spacing:1px}
+main ol.man-decor {width:100%}
+main ol.man-decor li.tl {text-align:left}
+main ol.man-decor li.tc {text-align:center;letter-spacing:4px}
+main ol.man-decor li.tr {text-align:right;float:right}

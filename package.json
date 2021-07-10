@@ -37,6 +37,7 @@
   "links": {
     "styles": [
       "/assets/styles/default.css",
+      "/assets/styles/manual.css",
       "https://unpkg.com/@highlightjs/cdn-assets@11.1.0/styles/base16/solarized-dark.min.css"
     ],
     "parsers": [
