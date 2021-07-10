@@ -1,7 +1,8 @@
 ---
+title: About Drawght
 layout: default
 ---
-# Drawght
+# {{ title }}
 
 Drawght is a data handler for texts without logical statements. The goal is
 to use a dataset (such as the subject of a text) to draft a document
@@ -205,9 +206,9 @@ Drawght has a simple syntax:
 
 ## License (MIT)
 
-### Copyright &copy; 2021, Hallison Batista
-
 ```
+Copyright (c) 2021, Hallison Batista
+
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
 the Software without restriction, including without limitation the rights to
