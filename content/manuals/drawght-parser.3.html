@@ -1,0 +1,93 @@
+<div class='mp'>
+
+<h2 id="NAME">NAME</h2>
+<p class="man-name">
+  <code>drawght-parser</code> - <span class="man-whatis">Libraries to parse Drawght statements</span>
+</p>
+<h2 id="SYNOPSIS">SYNOPSIS</h2>
+
+<p>Drawght has been implemented in <a href="#JavaScript" title="JavaScript" data-bare-link="true">JavaScript</a>, <a href="#Ruby" title="Ruby" data-bare-link="true">Ruby</a>, <a href="#Go" title="Go" data-bare-link="true">Go</a>.</p>
+
+<h3 id="JavaScript">JavaScript</h3>
+
+<pre><code class="js">"use strict";
+
+const fs = require("fs");
+const drawght = require("./drawght");
+const data = require("./data.json");
+const inputFile = "template.in";
+
+console.log("Dataset", data);
+fs.readFile(inputFile, "utf8", function(fail, template) {
+  if (fail) {
+    return console.error(fail);
+  }
+  console.log(template);
+  console.log(drawght.parse(template, data));
+});
+</code></pre>
+
+<h3 id="Ruby">Ruby</h3>
+
+<pre><code>require "yaml"
+require "drawght"
+
+yaml = File.read("data.yaml")
+data = YAML.load(yaml)
+input_file = "template.in"
+
+puts "Dataset", yaml
+template = File.read(input_file)
+drawght = Drawght::Parser.new(template)
+puts template
+puts drawght.parse(data)
+</code></pre>
+
+<h3 id="Go">Go</h3>
+
+<pre><code>package main
+
+import (
+    "fmt"
+    "io/ioutil"
+    "encoding/json"
+)
+
+import "github.com/drawght/drawght-parser-go"
+
+func main() {
+    jsonContent, fail := ioutil.ReadFile("data.json")
+    if fail != nil {
+        fmt.Println(fail)
+    }
+
+    var data interface{}
+    if fail := json.Unmarshal(jsonContent, &amp;data); fail != nil {
+        fmt.Println(fail)
+    }
+
+    template, fail := ioutil.ReadFile("template.in")
+    if fail != nil {
+        fmt.Println(fail)
+    }
+
+    result := drawght.Parse(string(template), data)
+
+    fmt.Printf("%v\n", data)
+    fmt.Printf("%v\n", result)
+}
+</code></pre>
+
+<h2 id="SEE-ALSO">SEE ALSO</h2>
+
+<p><a class="man-ref" href="drawght.5.html">drawght<span class="s">(5)</span></a></p>
+
+<h2 id="AUTHOR">AUTHOR</h2>
+
+<p>Hallison Batista &lt;<a href="mailto:email@hallison.dev.br" data-bare-link="true">email@hallison.dev.br</a>&gt;</p>
+
+<h2 id="ACKNOWLEDGEMENTS">ACKNOWLEDGEMENTS</h2>
+
+<p>Drawght is developed and maintained by Hallison Batista
+(<a href="https://drawght.github.io" data-bare-link="true">https://drawght.github.io</a>).</p>
+</div>

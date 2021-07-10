@@ -1,0 +1,47 @@
+<div class='mp'>
+
+<h2 id="NAME">NAME</h2>
+<p class="man-name">
+  <code>drawght</code> - <span class="man-whatis">A data handler for texts without logical statements</span>
+</p>
+<h2 id="DESCRIPTION">DESCRIPTION</h2>
+
+<p>Drawght is a data handler for texts without logical statements. The goal is
+to use a dataset (such as the subject of a text) to draft a document
+template. It can be considered a mini template processor.</p>
+
+<p>Data is accessed through <code>{}</code> braces, replaced by their respective values.</p>
+
+<h2 id="SYNTAX">SYNTAX</h2>
+
+<dl>
+<dt><code>{key}</code></dt>
+<dd><p>Converts <code>key</code> to its respective value. If the value is a list, then the row
+will be replicated and converted with the respective values.</p></dd>
+<dt><code>{object.key}</code></dt>
+<dd><p>Converts <code>key</code> to its respective value inside <code>object</code>, assuming the same
+behavior as <code>{key}</code>.</p></dd>
+<dt><code>{list:key}</code></dt>
+<dd><p>Selects <code>list</code>, replicates the line for each item in the list, and converts
+<code>key</code> to its respective value contained in an object within <code>list</code>. The
+<code>list</code> key can also be accessed by <code>object.list</code>, just as <code>key</code> can also be
+accessed by <code>object.key</code> which will be converted following the same process
+in case it is a list.</p></dd>
+<dt><code>{list#n.key}</code></dt>
+<dd><p>Selects item object <code>n</code> (from 1) from <code>list</code> and converts <code>key</code> to its
+respective value. The whole process is similar to <code>object.key</code>.</p></dd>
+</dl>
+
+<h2 id="SEE-ALSO">SEE ALSO</h2>
+
+<p><a class="man-ref" href="drawght-parser.3.html">drawght-parser<span class="s">(3)</span></a></p>
+
+<h2 id="AUTHOR">AUTHOR</h2>
+
+<p>Hallison Batista &lt;<a href="mailto:email@hallison.dev.br" data-bare-link="true">email@hallison.dev.br</a>&gt;</p>
+
+<h2 id="ACKNOWLEDGEMENTS">ACKNOWLEDGEMENTS</h2>
+
+<p>Drawght is developed and maintained by Hallison Batista
+(<a href="https://drawght.github.io" data-bare-link="true">https://drawght.github.io</a>).</p>
+</div>
