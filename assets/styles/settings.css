@@ -1,18 +1,21 @@
 /* Convertion: 1rem ~= 16px */
 
 :root {
-  --page-width: 800px;
-  --grid-gap: 0.25rem;
+  --page-width: 960px;
+  --grid-gap: 1.00rem;
   --grid-template-areas:
   "sidebar header"
   "sidebar main"
   "sidebar footer";
-  --grid-template-columns: 25% 75%;
+  --grid-column-width: calc(var(--page-width) / 4);
+  --grid-template-columns: var(--grid-column-width) calc(var(--grid-column-width) * 3);
   --grid-template-rows: auto;
 
   --article-width: 100%;
   --article-column-width: 50%;
   --article-column-count: 2;
+
+  font-family: sans-serif;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -67,6 +70,10 @@
 @media (min-width: 1025px) {
 /* big landscape tablets, laptops, and desktops */
   :root {
+  }
+  body > aside {
+    position: fixed;
+    width: var(--grid-column-width);
   }
 }
 
