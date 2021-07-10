@@ -19,7 +19,11 @@
     "draft",
     "parser"
   ],
-  "author": "Hallison Batista <email@hallison.dev.br>",
+  "author": {
+    "name": "Hallison Batista",
+    "email": "email@hallison.dev.br",
+    "url": "https://hallison.dev.br"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/drawght/drawght.github.io/issues"
