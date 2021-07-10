@@ -36,6 +36,7 @@ module.exports = function(settings) {
   settings.addLayoutAlias("default", "layouts/default.njk")
 
   settings.addPassthroughCopy({
+    "./assets/images" : "assets/images",
     "./assets/styles" : "assets/styles",
     "./assets/scripts": "assets/scripts",
   });
