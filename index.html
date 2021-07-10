@@ -1,0 +1,247 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="generator" content="11ty v0.12.1"/>
+  <meta name="description" content="A data handler for texts without logical statements."/>
+  <meta name="hostname" content=""/>
+  <meta name="keywords" content="template,draft,parser"/><meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="Drawght"/>
+  <meta property="og:title" content="About Drawght"/>
+  <meta property="og:description" content="A data handler for texts without logical statements."/>
+  <meta property="og:url" content="https://github.com/drawght/drawght.github.io#readme"/>
+  <meta property="og:image" content=""/>
+
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:locale:alternate" content="pt_BR"/>
+  <meta property="og:locale:alternate" content="pt_PT"/>
+  <link rel="stylesheet" type="text/css" href="/assets/styles/default.css"/>
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/@highlightjs/cdn-assets@11.1.0/styles/base16/solarized-dark.min.css"/>
+
+  <link rel="shortcut icon" type="image/ico" href="/assets/images/favicon.ico" />
+  <link rel="icon" type="image/ico" href="/assets/images/favicon.ico" />
+
+  <title>Drawght - About Drawght</title>
+</head>
+<body>
+  <aside>
+    <main>
+      <figure>
+        <img src="/assets/images/brand.svg"/>
+        <figcaption>Drawght</figcaption>
+      </figure><p>A data handler for texts without logical statements.</p>
+<p>Parsers:</p>
+<ul>
+<li><a href="https://github.com/drawght/drawght-parser-nodejs#readme">JavaScript/NodeJS</a></li>
+<li><a href="https://github.com/drawght/drawght-parser-ruby#readme">Ruby</a></li>
+<li><a href="https://github.com/drawght/drawght-parser-go#readme">Go</a></li>
+</ul>
+
+    </main>
+
+    <footer><p>Drawght was developed by <a href="https://hallison.dev.br">Hallison Batista</a></p>
+<p>Builded with <a href="//11ty.dev">11ty</a> v0.12.1</p>
+
+    </footer>
+  </aside>
+
+  <main><h1>About Drawght</h1>
+<p>Drawght is a data handler for texts without logical statements. The goal is
+to use a dataset (such as the subject of a text) to draft a document
+template. It can be considered a mini template processor.</p>
+<p>Data is accessed through <code>{}</code> braces, replaced by their respective values.</p>
+<p>Considering the following data:</p>
+<pre><code class="hljs language-yaml"><span class="hljs-attr">title:</span> <span class="hljs-string">Drawght</span> <span class="hljs-string">is</span> <span class="hljs-string">a</span> <span class="hljs-string">very</span> <span class="hljs-string">useful</span> <span class="hljs-string">sketch</span>
+<span class="hljs-attr">author:</span>
+  <span class="hljs-attr">name:</span> <span class="hljs-string">Hallison</span> <span class="hljs-string">Batista</span>
+  <span class="hljs-attr">email:</span> <span class="hljs-string">email@hallison.dev.br</span>
+  <span class="hljs-attr">networks:</span>
+  <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Github</span>
+    <span class="hljs-attr">url:</span> <span class="hljs-string">//github.com/hallison</span>
+  <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Twitter</span>
+    <span class="hljs-attr">url:</span> <span class="hljs-string">//twitter.com/hallison</span>
+<span class="hljs-attr">creation-date:</span> <span class="hljs-number">2021-06-28</span>
+<span class="hljs-attr">publishing date:</span> <span class="hljs-number">2021-07-01</span>
+<span class="hljs-attr">references:</span>
+<span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">JSON</span> <span class="hljs-string">Template</span>
+  <span class="hljs-attr">url:</span> <span class="hljs-string">//code.google.com/archive/p/json-template</span>
+<span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Mustache</span>
+  <span class="hljs-attr">url:</span> <span class="hljs-string">//mustache.github.io</span>
+<span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Handlebars</span>
+  <span class="hljs-attr">url:</span> <span class="hljs-string">//handlebarsjs.com</span>
+<span class="hljs-attr">tags:</span>
+<span class="hljs-bullet">-</span> <span class="hljs-string">Template</span>
+<span class="hljs-bullet">-</span> <span class="hljs-string">Draft</span>
+</code></pre>
+<p>Note that the &quot;<code class="language-yaml"><span class="hljs-attr">creation-date:</span></code>&quot; and &quot;<code class="language-yaml"><span class="hljs-attr">publishing date:</span></code>&quot; fields
+are normally identified by the parser.</p>
+<p>In a template written in Markdown:</p>
+<pre><code class="hljs language-markdown"><span class="hljs-section"># {title}</span>
+
+Drawght is a good tool for writing draft documents using datasets without
+logical statements.
+
+Written by {author.name} &lt;{author.email}&gt;, created in {creation-date},
+published in {publishing date} and tagged by {tags#1}.
+
+<span class="hljs-bullet">-</span> [<span class="hljs-string">{author.networks:name}</span>](<span class="hljs-link">{author.networks:url}</span>)
+
+Follow the news on [<span class="hljs-string">{author.networks#1.name}</span>](<span class="hljs-link">{author.networks#1.url}</span>).
+
+The syntax was inspired by:
+
+<span class="hljs-bullet">-</span> [<span class="hljs-string">{references:name}</span>](<span class="hljs-link">{references:url}</span>)
+
+Tags:
+
+<span class="hljs-bullet">-</span> {tags} (tagged by {author.name}).
+</code></pre>
+<p>The Drawght processing returns the following result:</p>
+<pre><code class="hljs language-markdown"><span class="hljs-section"># Drawght is a very useful sketch</span>
+
+Drawght is a good tool for writing draft documents using datasets without
+logical statements.
+
+Written by Hallison Batista <span class="xml">&lt;email@hallison.dev.br&gt;</span>, created in 2021-06-28,
+published in 2021-07-01 and tagged by Template.
+
+<span class="hljs-bullet">-</span> [<span class="hljs-string">Dev.to</span>](<span class="hljs-link">//dev.to/hallison</span>)
+<span class="hljs-bullet">-</span> [<span class="hljs-string">Github</span>](<span class="hljs-link">//github.com/hallison</span>)
+<span class="hljs-bullet">-</span> [<span class="hljs-string">Twitter</span>](<span class="hljs-link">//twitter.com/hallison</span>)
+
+Follow the news on [<span class="hljs-string">Dev.to</span>](<span class="hljs-link">//dev.to/hallison</span>).
+
+The syntax was inspired by:
+
+<span class="hljs-bullet">-</span> [<span class="hljs-string">JSON Template</span>](<span class="hljs-link">//code.google.com/archive/p/json-template</span>)
+<span class="hljs-bullet">-</span> [<span class="hljs-string">Mustache</span>](<span class="hljs-link">//mustache.github.io</span>)
+<span class="hljs-bullet">-</span> [<span class="hljs-string">Handlebars</span>](<span class="hljs-link">//handlebarsjs.com</span>)
+
+Tags:
+
+<span class="hljs-bullet">-</span> Template (tagged by Hallison Batista).
+<span class="hljs-bullet">-</span> Draft (tagged by Hallison Batista).
+</code></pre>
+<p>In a template written in HTML:</p>
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>{title}<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+Drawght is a good tool for writing draft documents using datasets without
+logical statements.
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+Written by <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;mailto:{author.email}&quot;</span>&gt;</span>{author.email}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>, created
+published in {publishing date} and tagged by {tags#1}.
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{author.networks:url}&quot;</span>&gt;</span>{author.networks:name}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+Follow the news on <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{author.networks#1.url}&quot;</span>&gt;</span>author.networks#1.name<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+The syntax was inspired by:
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{references:url}&quot;</span>&gt;</span>{references:name}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+Tags:
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>{tags} (tagged by {author.name}).<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+<p>The Drawght processing returns the following result:</p>
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Drawght is a very useful sketch<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+Drawght is a good tool for writing draft documents using datasets without
+logical statements.
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+Written by <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;mailto:email@hallison.dev.br&quot;</span>&gt;</span>Hallison Batista<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>,
+created published in 2021-07-01 and tagged by Template.
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//dev.to/hallison&quot;</span>&gt;</span>Dev.to<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//github.com/hallison&quot;</span>&gt;</span>Github<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//twitter.com/hallison&quot;</span>&gt;</span>Twitter<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+Follow the news on <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//dev.to/hallison&quot;</span>&gt;</span>Dev.to<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+The syntax was inspired by:
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//code.google.com/archive/p/json-template&quot;</span>&gt;</span>JSON Template<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//mustache.github.io&quot;</span>&gt;</span>Mustache<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//handlebarsjs.com&quot;</span>&gt;</span>Handlebars<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+Tags:
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Template (tagged by Hallison Batista).<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Draft (tagged by Hallison Batista).<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+<h2>Syntax</h2>
+<p>Drawght has a simple syntax:</p>
+<dl>
+<dt><code>{key}</code></dt>
+<dd>Converts <code>key</code> to its respective value. If the value is a list, then the row
+will be replicated and converted with the respective values.</dd>
+<dt><code>{object.key}</code></dt>
+<dd>Converts <code>key</code> to its respective value inside <code>object</code>, assuming the same
+behavior as <code>{key}</code>.</dd>
+<dt><code>{list:key}</code></dt>
+<dd>Selects <code>list</code>, replicates the line for each item in the list, and converts
+<code>key</code> to its respective value contained in an object within <code>list</code>. The
+<code>list</code> key can also be accessed by <code>object.list</code>, just as <code>key</code> can also be
+accessed by <code>object.key</code> which will be converted following the same process
+in case it is a list.</dd>
+<dt><code>{list#n.key}</code></dt>
+<dd>Selects item object <code>n</code> (from 1) from <code>list</code> and converts <code>key</code> to its
+respective value. The whole process is similar to <code>object.key</code>.</dd>
+</dl>
+<h2>License (MIT)</h2>
+<pre><code class="hljs">Copyright (c) 2021, Hallison Batista
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the &quot;Software&quot;), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</code></pre>
+</main>
+</body>
+</html>

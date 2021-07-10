@@ -1,0 +1,102 @@
+@import "settings.css" screen;
+
+body {
+  display: grid;
+  gap: var(--grid-gap);
+  grid-template-areas: var(--grid-template-areas);
+  grid-template-columns: var(--grid-template-columns);
+  grid-template-rows: var(--grid-template-rows);
+  justify-content: stretch;
+  align-content: center;
+  justify-items: stretch;
+  align-items: stretch;
+  width: var(--page-width);
+  margin: 0 auto;
+  padding: 0 var(--grid-gap);
+}
+
+body > header {
+  grid-area: header;
+}
+
+body > main {
+  grid-area: main;
+  height: auto;
+}
+
+body > aside {
+  --padding-h: 2.00rem;
+  --padding-v: 0.50rem;
+
+  grid-area: sidebar;
+  display: flex;
+  height: calc(100% - var(--padding-h) * 2);
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: var(--padding-h);
+  padding-bottom: var(--padding-h);
+  text-align: justify;
+}
+
+aside > footer {
+  font-size: 0.75rem;
+}
+
+aside figure img[src="/assets/images/brand.svg"] {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+aside figure figcaption {
+  text-align: center;
+}
+
+aside > footer > p {
+  margin: 0;
+  text-align: center;
+}
+
+body > footer {
+  grid-area: footer;
+}
+
+article {
+  width: var(--article-width);
+  height: calc(inherit -1px + 1px);
+}
+
+body > header > nav > ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  white-space: nowrap;
+}
+
+body > header > nav > ul li {
+  margin: 0.25rem;
+  padding: 0;
+  border-radius: calc(1rem / 4);
+  /* outline: 1px solid rgba(0, 0, 0, 0.50); */
+  box-shadow: 0 0 0.25rem rgba(49,132,253,.5);
+}
+
+body > header > nav > ul li:first-child {
+  margin-left: 0;
+}
+
+body > header > nav > ul li a {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+}
+
+h2 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.50);
+}
+
+dl > dt {
+  margin-top: 1.00rem;
+  margin-bottom: 0.25rem;
+}
