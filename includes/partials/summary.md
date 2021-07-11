@@ -2,6 +2,6 @@
 
 Parsers:
 
-{%- for parser in pkg.links.parsers %}
-- [{{ parser.language }}]({{ parser.url }})
+{%- for parser in collections.parsers %}
+- [{{ parser.data.language }}]({{ parser.url }})
 {%- endfor %}

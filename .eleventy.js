@@ -33,7 +33,8 @@ module.exports = function(settings) {
 
   settings.setDataDeepMerge(true);
 
-  settings.addLayoutAlias("default", "layouts/default.njk")
+  settings.addLayoutAlias("default", "layouts/default.njk");
+  settings.addLayoutAlias("parser", "layouts/parser.njk");
 
   settings.addPassthroughCopy({
     "./assets/images" : "assets/images",

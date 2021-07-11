@@ -1,0 +1,19 @@
+{% extends "layouts/default.njk" %}
+{% set parser = collections.parsers | getCollectionItem(page) %}
+{% block content %}
+<article>
+  <header>
+    <h1>{{ title }} - {{ parser.data.language }}</h1>
+    <address>
+      <ul>
+      {%- for reference in parser.data.externalReferences -%}
+      <li data-url-tag><a href="{{ reference.url }}">{{ reference.name }}</a></li>
+      {%- endfor -%}
+      </ul>
+    </address>
+  </header>
+  <main>
+  {{ content | safe }}
+  </main>
+</article>
+{% endblock %}
