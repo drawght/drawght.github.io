@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="generator" content="11ty v0.12.1"/>
+  <meta name="description" content="A data handler for texts without logical statements."/>
+  <meta name="hostname" content=""/>
+  <meta name="keywords" content="template,draft,parser"/><meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="Drawght"/>
+  <meta property="og:title" content="Drawght Parser"/>
+  <meta property="og:description" content="A data handler for texts without logical statements."/>
+  <meta property="og:url" content="https://github.com/drawght/drawght.github.io#readme"/>
+  <meta property="og:image" content=""/>
+
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:locale:alternate" content="pt_BR"/>
+  <meta property="og:locale:alternate" content="pt_PT"/>
+  <link rel="stylesheet" type="text/css" href="/assets/styles/default.css"/>
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/@highlightjs/cdn-assets@11.1.0/styles/base16/solarized-dark.min.css"/>
+
+  <link rel="shortcut icon" type="image/ico" href="/assets/images/favicon.ico" />
+  <link rel="icon" type="image/ico" href="/assets/images/favicon.ico" />
+
+  <title>Drawght - Drawght Parser</title>
+</head>
+<body>
+  <aside>
+    <main>
+      <figure>
+        <a href="/"><img src="/assets/images/brand.svg"/></a>
+        <figcaption>Drawght</figcaption>
+      </figure><p>A data handler for texts without logical statements.</p>
+<p>Parsers:</p>
+<ul>
+<li><a href="/parsers/nodejs/">NodeJS</a></li>
+<li><a href="/parsers/ruby/">Ruby</a></li>
+<li><a href="/parsers/go/">Go</a></li>
+</ul>
+
+    </main>
+
+    <footer><p>Drawght was developed by <a href="https://hallison.dev.br">Hallison Batista</a></p>
+<p>Builded with <a href="//11ty.dev">11ty</a> v0.12.1</p>
+
+    </footer>
+  </aside>
+
+  <main>
+<article>
+  <header>
+    <h1>Drawght Parser - NodeJS</h1>
+    <address>
+      <ul><li data-url-tag><a href="https://github.com/drawght/drawght-js">Github</a></li><li data-url-tag><a href="https://www.npmjs.com/package/@drawght/parser">NPM</a></li></ul>
+    </address>
+  </header>
+  <main>
+  <p>Install:</p>
+<pre><code class="hljs language-shell">npm install --save-dev @drawght/parser
+</code></pre>
+<p>Considering the following dataset written in JSON file named <code>dataset.json</code>:</p>
+<pre><code class="hljs language-json">{
+  <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Drawght is a very useful sketch&quot;</span>,
+  <span class="hljs-attr">&quot;author&quot;</span>: {
+    <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Hallison Batista&quot;</span>,
+    <span class="hljs-attr">&quot;email&quot;</span>: <span class="hljs-string">&quot;email@hallison.dev.br&quot;</span>,
+    <span class="hljs-attr">&quot;networks&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Dev.to&quot;</span>,
+        <span class="hljs-attr">&quot;url&quot;</span>: <span class="hljs-string">&quot;//dev.to/hallison&quot;</span>
+      }, {
+        <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Github&quot;</span>,
+        <span class="hljs-attr">&quot;url&quot;</span>: <span class="hljs-string">&quot;//github.com/hallison&quot;</span>
+      }, {
+        <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Twitter&quot;</span>,
+        <span class="hljs-attr">&quot;url&quot;</span>: <span class="hljs-string">&quot;//twitter.com/hallison&quot;</span>
+      }
+    ]
+  },
+  <span class="hljs-attr">&quot;creation-date&quot;</span>: <span class="hljs-string">&quot;2021-06-28&quot;</span>,
+  <span class="hljs-attr">&quot;publishing date&quot;</span>: <span class="hljs-string">&quot;2021-07-01&quot;</span>,
+  <span class="hljs-attr">&quot;references&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;JSON Template&quot;</span>,
+      <span class="hljs-attr">&quot;url&quot;</span>: <span class="hljs-string">&quot;//code.google.com/archive/p/json-template&quot;</span>
+    }, {
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Mustache&quot;</span>,
+      <span class="hljs-attr">&quot;url&quot;</span>: <span class="hljs-string">&quot;//mustache.github.io&quot;</span>
+    } , {
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Handlebars&quot;</span>,
+      <span class="hljs-attr">&quot;url&quot;</span>: <span class="hljs-string">&quot;//handlebarsjs.com&quot;</span>
+    }
+  ],
+  <span class="hljs-attr">&quot;tags&quot;</span>: [
+    <span class="hljs-string">&quot;Template&quot;</span>,
+    <span class="hljs-string">&quot;Draft&quot;</span>
+  ]
+}
+</code></pre>
+<p>Using a Markdown template named <code>template.md.in</code>:</p>
+<pre><code class="hljs language-markdown"><span class="hljs-section"># {title}</span>
+
+Drawght is a good tool for writing draft documents using datasets without
+logical statements.
+
+Written by {author.name} &lt;{author.email}&gt;, created in {creation-date},
+published in {publishing date} and tagged by {tags#1}.
+
+<span class="hljs-bullet">-</span> [<span class="hljs-string">{author.networks:name}</span>](<span class="hljs-link">{author.networks:url}</span>)
+
+Follow the news on [<span class="hljs-string">{author.networks#1.name}</span>](<span class="hljs-link">{author.networks#1.url}</span>).
+
+The syntax was inspired by: 
+
+<span class="hljs-bullet">-</span> [<span class="hljs-string">{references:name}</span>](<span class="hljs-link">{references:url}</span>)
+
+Tags:
+
+<span class="hljs-bullet">-</span> {tags} (tagged by {author.name}).
+</code></pre>
+<p>In the NodeJS source code:</p>
+<pre><code class="hljs language-javascript"><span class="hljs-meta">&quot;use strict&quot;</span>;
+
+<span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;fs&quot;</span>);
+<span class="hljs-keyword">const</span> drawght = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;@drawght/parser&quot;</span>);
+<span class="hljs-keyword">const</span> data = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;./dataset.json&quot;</span>);
+<span class="hljs-keyword">const</span> inputFile = <span class="hljs-string">&quot;template.md.in&quot;</span>;
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Dataset&quot;</span>, data);
+fs.readFile(inputFile, <span class="hljs-string">&quot;utf8&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">fail, template</span>) </span>{
+  <span class="hljs-keyword">if</span> (fail) {
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">console</span>.error(fail);
+  }
+  <span class="hljs-built_in">console</span>.log(drawght.parse(template, data));
+});
+</code></pre>
+<p>The result will be:</p>
+<pre><code class="hljs language-markdown"><span class="hljs-section"># Drawght is a very useful sketch</span>
+
+Drawght is a good tool for writing draft documents using datasets without
+logical statements.
+
+Written by Hallison Batista <span class="xml">&lt;email@hallison.dev.br&gt;</span>, created in 2021-06-28,
+published in 2021-07-01 and tagged by Template.
+
+<span class="hljs-bullet">-</span> [<span class="hljs-string">Dev.to</span>](<span class="hljs-link">//dev.to/hallison</span>)
+<span class="hljs-bullet">-</span> [<span class="hljs-string">Github</span>](<span class="hljs-link">//github.com/hallison</span>)
+<span class="hljs-bullet">-</span> [<span class="hljs-string">Twitter</span>](<span class="hljs-link">//twitter.com/hallison</span>)
+
+Follow the news on [<span class="hljs-string">Dev.to</span>](<span class="hljs-link">//dev.to/hallison</span>).
+
+The syntax was inspired by: 
+
+<span class="hljs-bullet">-</span> [<span class="hljs-string">JSON Template</span>](<span class="hljs-link">//code.google.com/archive/p/json-template</span>)
+<span class="hljs-bullet">-</span> [<span class="hljs-string">Mustache</span>](<span class="hljs-link">//mustache.github.io</span>)
+<span class="hljs-bullet">-</span> [<span class="hljs-string">Handlebars</span>](<span class="hljs-link">//handlebarsjs.com</span>)
+
+Tags:
+
+<span class="hljs-bullet">-</span> Template (tagged by Hallison Batista).
+<span class="hljs-bullet">-</span> Draft (tagged by Hallison Batista).
+</code></pre>
+
+  </main>
+</article>
+</main>
+</body>
+</html>

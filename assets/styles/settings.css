@@ -1,7 +1,6 @@
 /* Convertion: 1rem ~= 16px */
 
 :root {
-  --page-width: 960px;
   --grid-gap: 1.00rem;
   --grid-template-areas:
   "sidebar header"
@@ -10,6 +9,9 @@
   --grid-column-width: calc(var(--page-width) / 4);
   --grid-template-columns: var(--grid-column-width) calc(var(--grid-column-width) * 3);
   --grid-template-rows: auto;
+
+  --page-width: 960px;
+  --page-column-width: calc(var(--page-width) / 4);
 
   --article-width: 100%;
   --article-column-width: 50%;
@@ -21,6 +23,7 @@
 @media (min-width: 320px) and (max-width: 480px) {
 /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
   :root {
+    --page-width: 100vw;
     --article-column-width: 100%;
     --article-column-count: 1;
     --grid-template-areas:
@@ -71,9 +74,17 @@
 /* big landscape tablets, laptops, and desktops */
   :root {
   }
+  body {
+    width: calc(var(--page-width) + var(--grid-gap));
+    padding: 0 calc(var(--grid-gap) / 2);
+  }
+
   body > aside {
     position: fixed;
-    width: var(--grid-column-width);
+    width: var(--page-column-width);
+  }
+  body > main {
+    width: calc(var(--page-column-width) * 3);
   }
 }
 

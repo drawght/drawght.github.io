@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="generator" content="11ty v0.12.1"/>
+  <meta name="description" content="A data handler for texts without logical statements."/>
+  <meta name="hostname" content=""/>
+  <meta name="keywords" content="template,draft,parser"/><meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="Drawght"/>
+  <meta property="og:title" content="Drawght Parser"/>
+  <meta property="og:description" content="A data handler for texts without logical statements."/>
+  <meta property="og:url" content="https://github.com/drawght/drawght.github.io#readme"/>
+  <meta property="og:image" content=""/>
+
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:locale:alternate" content="pt_BR"/>
+  <meta property="og:locale:alternate" content="pt_PT"/>
+  <link rel="stylesheet" type="text/css" href="/assets/styles/default.css"/>
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/@highlightjs/cdn-assets@11.1.0/styles/base16/solarized-light.min.css"/>
+
+  <link rel="shortcut icon" type="image/ico" href="/assets/images/favicon.ico" />
+  <link rel="icon" type="image/ico" href="/assets/images/favicon.ico" />
+
+  <title>Drawght - Drawght Parser</title>
+</head>
+<body>
+  <aside>
+    <main>
+      <figure>
+        <a href="/"><img src="/assets/images/brand.svg"/></a>
+        <figcaption>Drawght</figcaption>
+      </figure><p>
+A data handler for texts without logical statements.
+</p>
+
+<p>
+Parsers:
+</p>
+
+<ul>
+	<li><a href="/parsers/javascript/">JavaScript</a></li>
+	<li><a href="/parsers/ruby/">Ruby</a></li>
+	<li><a href="/parsers/go/">Go</a></li>
+</ul>
+
+    </main>
+
+    <footer><p>Drawght was developed by <a href="https://hallison.dev.br">Hallison Batista</a></p>
+<p>Builded with <a href="//11ty.dev">11ty</a> v0.12.1</p>
+
+    </footer>
+  </aside>
+
+  <main>
+<article>
+  <header>
+    <h1>Drawght Parser - Ruby</h1>
+    <address>
+      <ul><li data-url-tag><a href="https://github.com/drawght/drawght-ruby">Github</a></li><li data-url-tag><a href="https://rubygems.org/gems/drawght">Rubygems</a></li></ul>
+    </address>
+  </header>
+  <main>
+  <p>Install:</p>
+<pre><code class="hljs language-shell">gem install drawght
+</code></pre>
+<p>In the Ruby source code:</p>
+<pre><code class="hljs language-ruby"><span class="hljs-keyword">require</span> <span class="hljs-string">&quot;yaml&quot;</span>
+<span class="hljs-keyword">require</span> <span class="hljs-string">&quot;drawght&quot;</span>
+
+template = <span class="hljs-string">&lt;&lt;eot
+# {title}
+
+Drawght is a good tool for writing draft documents using datasets without
+logical statements.
+
+Written by {author.name} &lt;{author.email}&gt;, created in {creation-date},
+published in {publishing date} and tagged by {tags#1}.
+
+- [{author.networks:name}]({author.networks:url})
+
+Follow the news on [{author.networks#1.name}]({author.networks#1.url}).
+
+The syntax was inspired by: 
+
+- [{references:name}]({references:url})
+
+Tags:
+
+- {tags} (tagged by {author.name}).
+eot</span>
+
+data = {
+  <span class="hljs-string">&quot;title&quot;</span> =&gt; <span class="hljs-string">&quot;Drawght is a very useful sketch&quot;</span>,
+  <span class="hljs-string">&quot;author&quot;</span> =&gt; {
+    <span class="hljs-string">&quot;name&quot;</span> =&gt; <span class="hljs-string">&quot;Hallison Batista&quot;</span>,
+    <span class="hljs-string">&quot;email&quot;</span> =&gt; <span class="hljs-string">&quot;email@hallison.dev.br&quot;</span>,
+    <span class="hljs-string">&quot;networks&quot;</span> =&gt; [
+      {
+        <span class="hljs-string">&quot;name&quot;</span> =&gt; <span class="hljs-string">&quot;Dev.to&quot;</span>,
+        <span class="hljs-string">&quot;url&quot;</span> =&gt; <span class="hljs-string">&quot;//dev.to/hallison&quot;</span>
+      }, {
+        <span class="hljs-string">&quot;name&quot;</span> =&gt; <span class="hljs-string">&quot;Github&quot;</span>,
+        <span class="hljs-string">&quot;url&quot;</span> =&gt; <span class="hljs-string">&quot;//github.com/hallison&quot;</span>
+      }, {
+        <span class="hljs-string">&quot;name&quot;</span> =&gt; <span class="hljs-string">&quot;Twitter&quot;</span>,
+        <span class="hljs-string">&quot;url&quot;</span> =&gt; <span class="hljs-string">&quot;//twitter.com/hallison&quot;</span>
+      }
+    ]
+  },
+  <span class="hljs-string">&quot;creation-date&quot;</span> =&gt; <span class="hljs-string">&quot;2021-06-28&quot;</span>,
+  <span class="hljs-string">&quot;publishing date&quot;</span> =&gt; <span class="hljs-string">&quot;2021-07-01&quot;</span>,
+  <span class="hljs-string">&quot;references&quot;</span> =&gt; [
+    {
+      <span class="hljs-string">&quot;name&quot;</span> =&gt; <span class="hljs-string">&quot;Mustache&quot;</span>,
+      <span class="hljs-string">&quot;url&quot;</span> =&gt; <span class="hljs-string">&quot;//mustache.github.io&quot;</span>
+    } , {
+      <span class="hljs-string">&quot;name&quot;</span> =&gt; <span class="hljs-string">&quot;Handlebars&quot;</span>,
+      <span class="hljs-string">&quot;url&quot;</span> =&gt; <span class="hljs-string">&quot;//handlebarsjs.com&quot;</span>
+    }
+  ],
+  <span class="hljs-string">&quot;tags&quot;</span> =&gt; [
+    <span class="hljs-string">&quot;Template&quot;</span>,
+    <span class="hljs-string">&quot;Draf&quot;</span>
+  ]
+}
+
+drawght = Drawght.new template
+result = drawght.parse data
+
+puts result
+
+<span class="hljs-comment">=begin Output result:
+# Drawght is a very useful sketch
+
+Drawght is a good tool for writing draft documents using datasets without
+logical statements.
+
+Written by Hallison Batista &lt;email<span class="hljs-doctag">@hallison</span>.dev.br&gt;, created in 2021-06-28,
+published in 2021-07-01 and tagged by Template.
+
+- [Dev.to](//dev.to/hallison)
+- [Github](//github.com/hallison)
+- [Twitter](//twitter.com/hallison)
+
+Follow the news on [Dev.to](//dev.to/hallison).
+
+The syntax was inspired by:
+
+- [Mustache](//mustache.github.io)
+- [Handlebars](//handlebarsjs.com)
+
+Tags:
+
+- Template (tagged by Hallison Batista).
+- Draf (tagged by Hallison Batista).
+=end</span>
+</code></pre>
+<p>The next source code, the dataset was written in YAML file <code>dataset.yaml</code> and
+template was written <code>template.md.in</code> file.</p>
+<pre><code class="hljs language-ruby"><span class="hljs-keyword">require</span> <span class="hljs-string">&quot;yaml&quot;</span>
+<span class="hljs-keyword">require</span> <span class="hljs-string">&quot;drawght&quot;</span>
+
+yaml = File.read(<span class="hljs-string">&quot;dataset.yaml&quot;</span>)
+data = YAML.load(yaml)
+input_file = <span class="hljs-string">&quot;template.md.in&quot;</span>
+
+puts <span class="hljs-string">&quot;Dataset&quot;</span>, yaml
+template = File.read(input_file)
+drawght = Drawght.new(template)
+puts drawght.parse(data)
+</code></pre>
+
+  </main>
+</article>
+</main>
+</body>
+</html>

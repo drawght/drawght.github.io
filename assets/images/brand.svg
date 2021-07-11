@@ -15,7 +15,10 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="brand.svg">
+   sodipodi:docname="brand.svg"
+   inkscape:export-filename="U:\home\hallison\private\drawght\drawght.github.io\assets\images\brand.png"
+   inkscape:export-xdpi="870"
+   inkscape:export-ydpi="870">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -29,7 +32,7 @@
      inkscape:cx="32"
      inkscape:cy="32"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
@@ -63,44 +66,57 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Background"
+     style="display:none">
+    <rect
+       style="opacity:0.1;fill:#714214;fill-opacity:1;stroke:none;stroke-width:2.11666656;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect828"
+       width="16.933332"
+       height="16.933332"
+       x="4.4504802e-07"
+       y="4.4504802e-07" />
+  </g>
+  <g
+     inkscape:label="Brand"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-280.06665)">
+     transform="translate(0,-280.06665)"
+     style="display:inline">
     <g
-       id="g1520"
-       transform="translate(4.8269987,-1.2982962)">
+       id="g4599"
+       transform="translate(-2.6333333e-6,1.6666666e-6)">
       <text
          id="text835"
-         y="290.04526"
-         x="-7.1657324"
+         y="288.74695"
+         x="-2.3387337"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888855px;line-height:1.25;font-family:'Poor Richard';-inkscape-font-specification:'Poor Richard';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
          xml:space="preserve"><tspan
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Poor Richard';-inkscape-font-specification:'Poor Richard';stroke-width:0.26458332"
-           y="294.49921"
-           x="-7.1657324"
+           y="293.2009"
+           x="-2.3387337"
            id="tspan833"
            sodipodi:role="line" /></text>
       <text
          id="text839"
-         y="289.41559"
-         x="-7.4805617"
+         y="288.11728"
+         x="-2.653563"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888855px;line-height:1.25;font-family:'Poor Richard';-inkscape-font-specification:'Poor Richard';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
          xml:space="preserve"><tspan
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Poor Richard';-inkscape-font-specification:'Poor Richard';stroke-width:0.26458332"
-           y="293.86954"
-           x="-7.4805617"
+           y="292.57123"
+           x="-2.653563"
            id="tspan837"
            sodipodi:role="line" /></text>
       <g
-         style="fill:#000000;fill-opacity:1"
-         transform="translate(-4.8269985,1.2982727)"
-         id="g873">
+         transform="translate(-2.7671056e-7,1.0821585e-5)"
+         id="g4575">
         <g
            aria-label="."
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888855px;line-height:1.25;font-family:'Poor Richard';-inkscape-font-specification:'Poor Richard';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
            id="text843"
-           transform="matrix(4.1995938,0,0,4.3026053,15.762574,-948.1087)">
+           transform="matrix(4.1995938,0,0,4.3026053,15.762574,-948.10872)">
           <path
              d="m -1.7384952,287.78601 q 0.1036974,0 0.1784559,0.0699 0.074759,0.0699 0.074759,0.18087 0,0.11334 -0.072347,0.17846 -0.072347,0.0627 -0.1712212,0.0627 -0.086816,0 -0.1736328,-0.0723 -0.086816,-0.0748 -0.086816,-0.16881 0,-0.10128 0.074759,-0.17604 0.074759,-0.0748 0.1760444,-0.0748 z"
              style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Poor Richard';-inkscape-font-specification:'Poor Richard';fill:#000000;fill-opacity:1;stroke-width:0.26458332"
@@ -108,7 +124,7 @@
              inkscape:connector-curvature="0" />
         </g>
         <g
-           transform="matrix(4.1995938,0,0,4.3026053,15.762574,-953.40037)"
+           transform="matrix(4.1995938,0,0,4.3026053,15.762574,-953.40039)"
            id="g863"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888855px;line-height:1.25;font-family:'Poor Richard';-inkscape-font-specification:'Poor Richard';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
            aria-label=".">
@@ -120,31 +136,17 @@
         </g>
       </g>
       <g
-         style="fill:#000800;fill-opacity:1"
-         id="g879"
-         transform="translate(-4.8269985,1.2982992)">
-        <g
-           aria-label="}"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888855px;line-height:1.25;font-family:'Poor Richard';-inkscape-font-specification:'Poor Richard';letter-spacing:0px;word-spacing:0px;fill:#000800;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-           id="text831"
-           transform="matrix(2.7485835,0,0,3.0649874,14.265189,-587.74781)">
-          <path
-             d="m 0.4894287,285.96429 q -0.1591634,0.0579 -0.25803764,0.18569 -0.0964627,0.12781 -0.0964627,0.30386 v 0.65112 q 0,0.25562 -0.0434082,0.40514 -0.04099664,0.14711 -0.12781304,0.26769 -0.08440483,0.12299 -0.21221786,0.22668 -0.12540147,0.1037 -0.2387451,0.16399 -0.11093207,0.0627 -0.144694,0.0627 -0.0337619,0 -0.0337619,-0.094 0,-0.0121 0.0361735,-0.0458 0.16398654,-0.16399 0.2242757,-0.40032 0.0602892,-0.23633 0.0602892,-0.51125 v -0.74035 q 0,-0.18811 0.1229899,-0.33039 0.12540147,-0.14469 0.3255615,-0.21945 -0.2025716,-0.0723 -0.3255615,-0.20981 -0.1229899,-0.13987 -0.1229899,-0.31832 v -0.74036 q 0,-0.27733 -0.0602892,-0.51125 -0.0602892,-0.23633 -0.2242757,-0.40032 l -0.0361735,-0.0458 q 0,-0.0941 0.0337619,-0.0941 0.0409966,0 0.1953369,0.0916 0.15675183,0.0892 0.31591523,0.25563 0.16157497,0.1664 0.22909883,0.43167 0.0265272,0.10369 0.0265272,0.34726 v 0.65113 q 0,0.16639 0.0964627,0.28938 0.0988742,0.12299 0.25803764,0.18087 z"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Poor Richard';-inkscape-font-specification:'Poor Richard';fill:#000800;fill-opacity:1;stroke-width:0.26458332"
-             id="path845"
-             inkscape:connector-curvature="0" />
-        </g>
-        <g
-           transform="matrix(-2.7485835,0,0,3.0649874,2.6681439,-587.74781)"
-           id="g867"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888855px;line-height:1.25;font-family:'Poor Richard';-inkscape-font-specification:'Poor Richard';letter-spacing:0px;word-spacing:0px;fill:#000800;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-           aria-label="}">
-          <path
-             inkscape:connector-curvature="0"
-             id="path865"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Poor Richard';-inkscape-font-specification:'Poor Richard';fill:#000800;fill-opacity:1;stroke-width:0.26458332"
-             d="m 0.4894287,285.96429 q -0.1591634,0.0579 -0.25803764,0.18569 -0.0964627,0.12781 -0.0964627,0.30386 v 0.65112 q 0,0.25562 -0.0434082,0.40514 -0.04099664,0.14711 -0.12781304,0.26769 -0.08440483,0.12299 -0.21221786,0.22668 -0.12540147,0.1037 -0.2387451,0.16399 -0.11093207,0.0627 -0.144694,0.0627 -0.0337619,0 -0.0337619,-0.094 0,-0.0121 0.0361735,-0.0458 0.16398654,-0.16399 0.2242757,-0.40032 0.0602892,-0.23633 0.0602892,-0.51125 v -0.74035 q 0,-0.18811 0.1229899,-0.33039 0.12540147,-0.14469 0.3255615,-0.21945 -0.2025716,-0.0723 -0.3255615,-0.20981 -0.1229899,-0.13987 -0.1229899,-0.31832 v -0.74036 q 0,-0.27733 -0.0602892,-0.51125 -0.0602892,-0.23633 -0.2242757,-0.40032 l -0.0361735,-0.0458 q 0,-0.0941 0.0337619,-0.0941 0.0409966,0 0.1953369,0.0916 0.15675183,0.0892 0.31591523,0.25563 0.16157497,0.1664 0.22909883,0.43167 0.0265272,0.10369 0.0265272,0.34726 v 0.65113 q 0,0.16639 0.0964627,0.28938 0.0988742,0.12299 0.25803764,0.18087 z" />
-        </g>
+         id="g4585">
+        <path
+           inkscape:connector-curvature="0"
+           id="path838"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888855px;line-height:1.25;font-family:'Playfair Display';-inkscape-font-specification:'Playfair Display';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.84436733"
+           d="m 11.377092,281.38971 v 0.27974 q 0.556582,0.0149 0.843303,0.221 0.286718,0.19146 0.387917,0.85429 0.118053,0.64809 0.118053,2.04739 0,1.32563 0.337329,2.07682 0.337328,0.7512 0.87703,1.11946 0.556583,0.35348 1.197489,0.51551 -0.640906,0.16195 -1.197489,0.53026 -0.53971,0.36823 -0.87703,1.11941 -0.337329,0.7365 -0.337329,2.06213 0,1.08998 -0.06744,1.72333 -0.05061,0.63337 -0.202405,0.94269 -0.134922,0.32402 -0.404782,0.41242 -0.26985,0.10317 -0.674643,0.10317 v 0.27974 q 1.062559,0 1.686603,-0.30933 0.640908,-0.29466 0.910764,-1.04578 0.269849,-0.75118 0.269849,-2.10628 0,-1.3846 0.101186,-2.13578 0.118054,-0.76591 0.387918,-1.08996 0.269848,-0.32404 0.792704,-0.35351 h 0.08431 v -0.26512 h -0.08431 q -0.522849,-0.0298 -0.792704,-0.3388 -0.269849,-0.32403 -0.387918,-1.08995 -0.101186,-0.76595 -0.101186,-2.15049 0,-1.29618 -0.269849,-2.03266 -0.269849,-0.75119 -0.910764,-1.06051 -0.624044,-0.30933 -1.686603,-0.30933 z" />
+        <path
+           d="m 5.5562432,281.3897 v 0.27974 q -0.5565818,0.0149 -0.8433034,0.221 -0.2867176,0.19146 -0.3879164,0.85429 -0.1180534,0.64809 -0.1180534,2.04739 0,1.32563 -0.3373284,2.07682 -0.3373283,0.7512 -0.8770301,1.11946 -0.5565832,0.35348 -1.1974892,0.51551 0.640906,0.16195 1.1974892,0.53026 0.5397098,0.36823 0.8770301,1.11941 0.3373284,0.7365 0.3373284,2.06213 0,1.08998 0.06744,1.72333 0.050613,0.63337 0.2024055,0.94269 0.1349215,0.32402 0.4047818,0.41242 0.2698496,0.10317 0.6746433,0.10317 v 0.27974 q -1.0625597,0 -1.686603,-0.30933 -0.6409086,-0.29466 -0.9107648,-1.04578 -0.2698483,-0.75118 -0.2698483,-2.10628 0,-1.3846 -0.1011867,-2.13578 -0.1180535,-0.76591 -0.3879177,-1.08996 -0.2698483,-0.32404 -0.7927035,-0.35351 h -0.084307 v -0.26512 h 0.084307 q 0.5228485,-0.0298 0.7927035,-0.3388 0.2698496,-0.32403 0.3879177,-1.08995 0.1011867,-0.76595 0.1011867,-2.15049 0,-1.29618 0.2698483,-2.03266 0.2698496,-0.75119 0.9107648,-1.06051 0.6240433,-0.30933 1.686603,-0.30933 z"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888855px;line-height:1.25;font-family:'Playfair Display';-inkscape-font-specification:'Playfair Display';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.84436733"
+           id="path4565"
+           inkscape:connector-curvature="0" />
       </g>
     </g>
   </g>
