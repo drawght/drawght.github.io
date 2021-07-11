@@ -38,6 +38,12 @@
     "styles": [
       "/assets/styles/default.css",
       "https://unpkg.com/@highlightjs/cdn-assets@11.1.0/styles/base16/solarized-light.min.css"
+    ],
+    "networks": [
+      {
+        "name": "Github",
+        "url": "https://github.com/drawght"
+      }
     ]
   }
 }
