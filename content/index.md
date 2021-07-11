@@ -1,5 +1,5 @@
 ---
-title: About Drawght
+title: Drawght
 layout: default
 ---
 # {{ title }}
