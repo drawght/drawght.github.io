@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import "settings.css" screen;
 
 body {
@@ -10,9 +11,11 @@ body {
   align-content: center;
   justify-items: stretch;
   align-items: stretch;
-  width: calc(var(--page-width) + var(--grid-gap));
   margin: 0 auto;
-  padding: 0 calc(var(--grid-gap) / 2);
+  font-family: 'Playfair Display', serif;
+  font-size: 1.00rem;
+  color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(113, 66, 20, 0.10);
 }
 
 body > header {
@@ -22,6 +25,14 @@ body > header {
 body > main {
   grid-area: main;
   height: auto;
+}
+
+body > main p {
+  line-height: 1.75rem;
+}
+
+body > main pre {
+  font-size: 0.80rem;
 }
 
 body > aside {
@@ -91,8 +102,12 @@ body > header > nav > ul li a {
   padding: 0.25rem 0.75rem;
 }
 
+h1 {
+  border-bottom: 2px solid rgba(113, 66, 20, 0.50);
+}
+
 h2 {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.50);
+  border-bottom: 1px solid rgba(113, 66, 20, 0.10);
 }
 
 dl > dt {

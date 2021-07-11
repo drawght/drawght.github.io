@@ -74,6 +74,11 @@
 /* big landscape tablets, laptops, and desktops */
   :root {
   }
+  body {
+    width: calc(var(--page-width) + var(--grid-gap));
+    padding: 0 calc(var(--grid-gap) / 2);
+  }
+
   body > aside {
     position: fixed;
     width: var(--page-column-width);
