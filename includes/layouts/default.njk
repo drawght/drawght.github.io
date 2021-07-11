@@ -38,9 +38,7 @@
         <figcaption>{{ pkg.title }}</figcaption>
       </figure>
 
-      {%- markdown %}
-      {%- include "partials/summary.md" %}
-      {%- endmarkdown %}
+      {%- include "partials/summary.njk" %}
     </main>
 
     <footer>
@@ -52,7 +50,9 @@
 
   <main>
   {%- block content -%}
-    {{ content | safe }}
+    <article>
+      {{ content | safe }}
+    </article>
   {%- endblock -%}
   </main>
 </body>

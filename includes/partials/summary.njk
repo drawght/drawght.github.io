@@ -1,0 +1,13 @@
+<p>
+{{ pkg.description }}
+</p>
+
+<p>
+Parsers:
+</p>
+
+<ul>
+{%- for parser in collections.parsers %}
+	<li><a href="{{ parser.url }}">{{ parser.data.language }}</a></li>
+{%- endfor %}
+</ul>
