@@ -1,0 +1,7 @@
+<p>
+{{ pkg.title }} was developed by <a href="{{pkg.author.url}}">{{pkg.author.name}}</a>.
+</p>
+
+<p>
+Builded with <a href="//11ty.dev">11ty</a> v{{ pkg.devDependencies['@11ty/eleventy'] | replace('^','') }}.
+</p>
