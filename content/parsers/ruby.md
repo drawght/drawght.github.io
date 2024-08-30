@@ -15,6 +15,7 @@ gem install drawght
 In the Ruby source code:
 
 ```ruby
+require "date"
 require "yaml"
 require "drawght"
 
@@ -41,42 +42,42 @@ Tags:
 eot
 
 data = {
-  "title" => "Drawght is a very useful sketch",
-  "author" => {
-    "name" => "Hallison Batista",
-    "email" => "email@hallison.dev.br",
-    "networks" => [
+  title: "Drawght is a very useful sketch",
+  author: {
+    name: "Hallison Batista",
+    email: "email@hallison.dev.br",
+    networks: [
       {
-        "name" => "Dev.to",
-        "url" => "//dev.to/hallison"
+        name: "Dev.to",
+        url: "//dev.to/hallison"
       }, {
-        "name" => "Github",
-        "url" => "//github.com/hallison"
+        name: "Github",
+        url: "//github.com/hallison"
       }, {
-        "name" => "Twitter",
-        "url" => "//twitter.com/hallison"
+        name: "Twitter",
+        url: "//twitter.com/hallison"
       }
     ]
   },
-  "creation-date" => "2021-06-28",
-  "publishing date" => "2021-07-01",
-  "references" => [
+  "creation-date": "2021-06-28",
+  "publishing date": "2021-07-01",
+  references: [
     {
-      "name" => "Mustache",
-      "url" => "//mustache.github.io"
+      name: "Mustache",
+      url: "//mustache.github.io"
     } , {
-      "name" => "Handlebars",
-      "url" => "//handlebarsjs.com"
+      name: "Handlebars",
+      url: "//handlebarsjs.com"
     }
   ],
-  "tags" => [
+  tags: [
     "Template",
     "Draf"
   ]
 }
 
-drawght = Drawght.new template
-result = drawght.parse data
+drawght = Drawght.load template
+result = drawght.compile data
 
 puts result
 
@@ -111,15 +112,18 @@ The next source code, the dataset was written in YAML file `dataset.yaml` and
 template was written `template.md.in` file.
 
 ```ruby
+require "date"
 require "yaml"
 require "drawght"
 
-yaml = File.read("dataset.yaml")
-data = YAML.load(yaml)
+yaml = File.read "dataset.yaml"
+data = YAML.load yaml, permitted_class: [ Date ]
 input_file = "template.md.in"
 
 puts "Dataset", yaml
-template = File.read(input_file)
-drawght = Drawght.new(template)
-puts drawght.parse(data)
+
+template = File.read input_file
+drawght = Drawght.load template
+
+puts drawght.compile(data)
 ```

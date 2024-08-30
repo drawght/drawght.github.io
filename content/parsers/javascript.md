@@ -41,7 +41,7 @@ Tags:
 - {tags} (tagged by {author.name}).
 `;
 
-var result = drawght.parse(template, {
+var result = drawght.compile(template, {
   title: "Drawght is a very useful sketch",
   author: {
     name: "Hallison Batista",
@@ -122,10 +122,12 @@ const data = require("./dataset.json");
 const inputFile = "./template.md.in";
 
 console.log("Dataset", data);
+
 fs.readFile(inputFile, "utf8", function(fail, template) {
   if (fail) {
     return console.error(fail);
   }
-  console.log(drawght.parse(template, data));
+
+  console.log(drawght.compile(template, data));
 });
 ```
