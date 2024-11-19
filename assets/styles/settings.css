@@ -34,6 +34,10 @@
     --grid-template-columns: 100%;
     --grid-template-rows: 20% 10% 50% 20%;
   }
+
+  body {
+    margin: 0 1.00rem !important;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 640px){
